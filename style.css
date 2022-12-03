@@ -41,6 +41,7 @@ body {
 
 img {
     max-width: 15vw;
+    min-width: 180px;
     display: block;
     margin: 0 auto;
 }
@@ -63,8 +64,8 @@ ul {
     font-size: 0.8rem;
     font-weight: 700;
     margin-top: 2rem;
-    border-top: 1px solid #57a0f876;
-    border-bottom: 1px solid #57A0F876;
+    border-top: 1px solid #57a0f835;
+    border-bottom: 1px solid #57A0F835;
 }
 
 li {
@@ -73,7 +74,7 @@ li {
 }
 
 li:nth-of-type(2) {
-    border-top: 1px solid #57a0f876;
+    border-top: 1px solid #57a0f835;
 }
 
 .pricing-price {
@@ -95,7 +96,7 @@ li:nth-of-type(2) {
     text-align: center;
     padding: 0.5rem 0;
     border-radius: 0.5rem;
-    max-width: 8vw;
+    max-width: 100px;
     border: 1px solid #57A0F876;
     color: #124e97;
 }
@@ -109,4 +110,20 @@ li:nth-of-type(2) {
     background: #57A0F876;
     color: #124e97;
     border: transparent;
+}
+
+@media (max-width: 610px) {
+    .panel {
+        flex-direction: column;
+        gap: 50px 0;
+        border-radius: 0;
+    }
+
+    img {
+        min-width: 250px;
+    }
+
+    .pricing-plan:nth-of-type(1) {
+        margin-top: 40px;
+    }
 }
