@@ -1,0 +1,112 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+body {
+    background: #57A0F8;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2vw 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.pricing-plan {
+    padding: 0 3vw;
+}
+
+.pricing-plan:nth-of-type(2) {
+    border-left: 1px solid #57A0F876;
+    border-right: 1px solid #57A0F876;
+
+}
+
+img {
+    max-width: 15vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.pricing-header {
+    text-transform: uppercase;
+    color: grey;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    border-top: 1px solid #57a0f876;
+    border-bottom: 1px solid #57A0F876;
+}
+
+li {
+    padding: 0.5rem 0;
+    color: #124e97;
+}
+
+li:nth-of-type(2) {
+    border-top: 1px solid #57a0f876;
+}
+
+.pricing-price {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: 900;
+    color: #124e97;
+}
+
+.pricing-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    max-width: 8vw;
+    border: 1px solid #57A0F876;
+    color: #124e97;
+}
+
+.pricing-plan:nth-of-type(2) .pricing-button {
+    background: #4e92e4;
+    color: white;
+}
+
+.pricing-plan .pricing-button:hover {
+    background: #57A0F876;
+    color: #124e97;
+    border: transparent;
+}
